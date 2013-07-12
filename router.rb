@@ -1,3 +1,4 @@
-get '/hi' do
-  "Hello World! #{Pairing.where(:leader_id => 1).first.date}"
+dashboard_controller = DashboardController.new
+get '/dashboard' do
+  dashboard_controller.show
 end
