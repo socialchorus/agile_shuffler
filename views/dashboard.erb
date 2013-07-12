@@ -1,1 +1,30 @@
-<%= "Hello from erb" %>
+<!doctype html>
+<html ng-app>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+</head>
+<body>
+<table class="dev-container">
+  <tr>
+    <th>
+      <h1>Devs</h1>
+    </th>
+    <th>
+      Open Story
+    </th>
+  </tr>
+  <% @devs.each do |dev| %>
+    <tr>
+      <td>
+        <strong><%= dev.name %></strong><br/>
+      </td>
+      <td>
+        <center><input type="checkbox"></center>
+      </td>
+    </tr>
+  <% end %>
+</table>
+</body>
+</html>
+
+

@@ -1,4 +1,5 @@
 dashboard_controller = DashboardController.new
 get '/dashboard' do
-  dashboard_controller.show
+  @devs = dashboard_controller.show
+  erb :dashboard
 end

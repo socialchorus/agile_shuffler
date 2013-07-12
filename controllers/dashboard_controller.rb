@@ -1,5 +1,6 @@
+require 'sinatra'
 class DashboardController
   def show
-    'berkin'
+    Dev.all
   end
 end
