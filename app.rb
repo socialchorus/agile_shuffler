@@ -1,8 +1,9 @@
+require 'date'
 require 'rubygems'
 require 'sinatra'
-require './config/database'
+require 'sequel'
+require 'sinatra/sequel'
+require 'pg'
+require './config/db/database'
+require './router'
 Dir["./models/*.rb"].each {|file| require file }
- 
-get '/hi' do
-  "Hello World!"
-end
