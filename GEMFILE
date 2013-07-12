@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'bundler', '~> 1.2'
-gem 'sinatra' 
+gem 'sinatra'
+gem 'shotgun' 
 
 # setup our test group and require rspec
 group :test do
