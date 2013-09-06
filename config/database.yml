@@ -1,0 +1,17 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: socialchorus
+  password:
+  database: agile_shuffler_dev
+  host: localhost
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: socialchorus
+  password:
+  database: agile_shuffler_test
+  host: localhost

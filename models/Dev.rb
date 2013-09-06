@@ -1,3 +1,3 @@
-class Dev < Sequel::Model
-  one_to_many :pairing
+class Dev < ActiveRecord::Base
+  has_many :pairings
 end
