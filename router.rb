@@ -6,5 +6,5 @@ end
 
 get '/devs.json' do
   content_type :json
-  dashboard_controller.show.map(&:values).to_json
+  dashboard_controller.show.to_json
 end
